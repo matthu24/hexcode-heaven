@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 json.extract! group, :id, :name
   hexes = group.hexes
   json.hexes do

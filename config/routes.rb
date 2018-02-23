@@ -3,5 +3,18 @@ Rails.application.routes.draw do
   root to: "static_pages#root"
   namespace :api, defaults: {format: :json} do
 
-  end 
+
+
+
+
+
+
+
+
+
+    resources :colors, only: [:create,:show]
+    resources :hexes, only: [:create,:show]
+    resources :groups, only: [:create,:show]
+
+  end
 end
