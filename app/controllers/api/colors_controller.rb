@@ -1,4 +1,7 @@
 class Api::ColorsController < ApplicationController
+    def index
+      @colors = Color.all
+    end
 
     def create
       @color = Color.new(color_params)

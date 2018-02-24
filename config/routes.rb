@@ -12,9 +12,9 @@ Rails.application.routes.draw do
 
 
 
-    resources :colors, only: [:create,:show]
-    resources :hexes, only: [:create,:show]
-    resources :groups, only: [:create,:show]
+    resources :colors, only: [:create,:show,:index]
+    resources :hexes, only: [:create,:show,:index]
+    resources :groups, only: [:create,:show,:index]
 
   end
 end
