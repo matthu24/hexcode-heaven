@@ -4,6 +4,10 @@ class SideBar extends React.Component{
   constructor(props){
     super(props)
   }
+
+  componentDidMount(){
+    this.props.fetchColors();
+  }
   render(){
     // var randomColor = Math.floor(Math.random()*16777215).toString(16);
     return(
