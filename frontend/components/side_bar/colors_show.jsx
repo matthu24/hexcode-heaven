@@ -23,10 +23,13 @@ class ColorsShow extends React.Component{
           {
             hexes.map((hex,id) => <HexItem key={id} hex={hex}/>)
           }
+
+        </ul>
+        <div className='button-container'>
           <Link className='back'  to='/'>
             Clear
           </Link>
-        </ul>
+        </div>
 
       </div>
     )
