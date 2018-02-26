@@ -8,8 +8,32 @@
 
 }
 
-.side-bar-item:hover{
-  font-weight: bold;
+.side-bar-itemRed a:hover{
+  color: red;
+}
+
+.side-bar-itemOrange a:hover{
+  color: orange;
+}
+
+.side-bar-itemYellow a:hover{
+  color: yellow;
+}
+
+.side-bar-itemGreen a:hover{
+  color: green;
+}
+
+.side-bar-itemBlue a:hover{
+  color: blue;
+}
+
+.side-bar-itemPurple a:hover{
+  color: purple;
+}
+
+.side-bar-itemGray a:hover{
+  color: gray;
 }
 
 

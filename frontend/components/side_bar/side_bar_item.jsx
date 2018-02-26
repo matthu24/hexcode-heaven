@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 
 export default props => {
+  let className = 'side-bar-item' + `${props.color.name}`;
   return(
-    <li className='side-bar-item'>
+    <li className={className}>
       <Link to={`/colors/${props.color.id}`}>
         {props.color.name}
       </Link>

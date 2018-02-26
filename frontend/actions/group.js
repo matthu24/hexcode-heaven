@@ -1,7 +1,7 @@
 import { fetchGroups,fetchGroup } from '../utils/group_util';
 
 export const RECEIVE_GROUP = 'RECEIVE_GROUP';
-export const RECIEVE_GROUPS = 'RECEIVE_GROUPS';
+export const RECEIVE_GROUPS = 'RECEIVE_GROUPS';
 
 const receiveGroup = group => ({
   type: RECEIVE_GROUP,
