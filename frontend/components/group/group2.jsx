@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
+import HexItem from '../hex/hex_item';
 import { NavLink } from 'react-router-dom';
 
-import HexItem from '../hex/hex_item';
 
-class Group extends React.Component{
+class Group2 extends React.Component{
   constructor(props){
     super(props)
   }
 
   componentDidMount(){
-    this.props.fetchSingleGroup(16);
+    this.props.fetchSingleGroup(30);
   }
 
   render(){
@@ -36,14 +36,26 @@ class Group extends React.Component{
               <NavLink to='/groups/2' exact={true} activeStyle={{ textDecoration: 'underline' }}>2</NavLink>
             </li>
 
+            <li>
+              <NavLink to='/groups/3' exact={true} activeStyle={{ textDecoration: 'underline' }}>3</NavLink>
+            </li>
+
+            <li>
+              <NavLink to='/groups/4' exact={true} activeStyle={{ textDecoration: 'underline' }}>4</NavLink>
+            </li>
+
+            <li>
+              <NavLink to='/groups/5' exact={true} activeStyle={{ textDecoration: 'underline' }}>5</NavLink>
+            </li>
+
+            <li>
+              <NavLink to='/groups/6' exact={true} activeStyle={{ textDecoration: 'underline' }}>6</NavLink>
+            </li>
+            <li>
+              <NavLink to='/groups/7' exact={true} activeStyle={{ textDecoration: 'underline' }}>7</NavLink>
+            </li>
 
 
-
-            <li>3</li>
-
-            <li>4</li>
-
-            <li>5</li>
 
           </ul>
         </div>
@@ -52,4 +64,4 @@ class Group extends React.Component{
   }
 }
 
-export default Group;
+export default Group2;

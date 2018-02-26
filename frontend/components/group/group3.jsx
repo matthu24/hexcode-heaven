@@ -4,13 +4,13 @@ import HexItem from '../hex/hex_item';
 import { NavLink } from 'react-router-dom';
 
 
-class Group extends React.Component{
+class Group3 extends React.Component{
   constructor(props){
     super(props)
   }
 
   componentDidMount(){
-    this.props.fetchSingleGroup(29);
+    this.props.fetchSingleGroup(31);
   }
 
   render(){
@@ -64,5 +64,4 @@ class Group extends React.Component{
   }
 }
 
-export default Group;
-//
+export default Group3;
