@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
-
+import HexItem from '../hex/hex_item';
 
 class Group extends React.Component{
   constructor(props){
@@ -8,7 +8,7 @@ class Group extends React.Component{
   }
 
   componentDidMount(){
-    this.props.fetchSingleGroup(1);
+    this.props.fetchSingleGroup(15);
   }
 
   render(){
@@ -19,10 +19,9 @@ class Group extends React.Component{
 
     return(
       <div className='group1-index'>
-        <div>{this.props.groups[0].name}</div>
         <ul>
           {
-            hexes.map((hex,id)=><li>{hex.code}</li>)
+            hexes.map((hex,id)=><HexItem key={id} hex={hex}/>)
           }
         </ul>
       </div>
