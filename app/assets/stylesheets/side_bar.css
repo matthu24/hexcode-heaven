@@ -6,8 +6,10 @@
   /*height: 100vh;*/
   background-color: lightgray;
 
+}
 
-
+.side-bar-item:hover{
+  font-weight: bold;
 }
 
 
