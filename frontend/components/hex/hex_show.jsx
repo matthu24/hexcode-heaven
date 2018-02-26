@@ -21,7 +21,7 @@ class HexShow extends React.Component{
           </div>
 
           <Link className='back'  to='/'>
-            Back
+            Back to Index View
           </Link>
         </div>
 

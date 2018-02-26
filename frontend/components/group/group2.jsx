@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
-import HexItem from '../hex/hex_item';
 import { NavLink } from 'react-router-dom';
 
+import HexItem from '../hex/hex_item';
 
 class Group extends React.Component{
   constructor(props){
@@ -10,7 +10,7 @@ class Group extends React.Component{
   }
 
   componentDidMount(){
-    this.props.fetchSingleGroup(15);
+    this.props.fetchSingleGroup(16);
   }
 
   render(){
@@ -36,6 +36,9 @@ class Group extends React.Component{
               <NavLink to='/groups/2' exact={true} activeStyle={{ textDecoration: 'underline' }}>2</NavLink>
             </li>
 
+
+
+
             <li>3</li>
 
             <li>4</li>
@@ -50,4 +53,3 @@ class Group extends React.Component{
 }
 
 export default Group;
-//
