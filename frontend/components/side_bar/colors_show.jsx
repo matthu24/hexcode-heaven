@@ -1,5 +1,5 @@
 import React from 'react';
-
+import HexItem from '../hex/hex_item';
 
 class ColorsShow extends React.Component{
   constructor(props){
@@ -11,13 +11,17 @@ class ColorsShow extends React.Component{
   }
 
   render(){
-    console.log(this.props)
+    if(!this.props.color) return null;
+
+    let hexes = Object.values(this.props.color.hexes);
 
     return(
       <div className='colors-show'>
-        <div>
-          {this.props.color.name}
-        </div>
+        <ul className='colors-show-list'>
+          {
+            hexes.map((hex,id) => <HexItem key={id} hex={hex}/>)
+          }
+        </ul>
       </div>
     )
   }

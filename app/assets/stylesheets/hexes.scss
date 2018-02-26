@@ -1,3 +1,25 @@
 // Place all the styles related to the hexes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.swatch-item{
+  padding: 60px;
+  padding-bottom: 60px;
+  /*border: 1px solid gray;*/
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.colors-show-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.swatch-bundle{
+  display: flex;
+flex-direction: column;
+margin: 20px;
+border: 1px solid lightgray;
+border-radius: 7px;
+}
