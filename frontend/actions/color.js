@@ -17,6 +17,6 @@ export const fetchAllColors = () => dispatch => (
   fetchColors().then(colors => dispatch(receiveColors(colors)))
 )
 
-export const fetchSingleColor = color => dispatch => (
-  fetchColor().then(color => dispatch(receiveColor(color)))
+export const fetchSingleColor = id => dispatch => (
+  fetchColor(id).then(color => dispatch(receiveColor(color)))
 )

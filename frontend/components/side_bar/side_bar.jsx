@@ -1,4 +1,5 @@
 import React from 'react';
+import SideBarItem from './side_bar_item';
 
 class SideBar extends React.Component{
   constructor(props){
@@ -17,14 +18,11 @@ class SideBar extends React.Component{
             <button>Random Color</button>
           </div>
           <ul className='sidebar-list'>
-            <li>Red</li>
-            <li>Orange</li>
-            <li>Yellow</li>
-            <li>Green</li>
-            <li>Blue</li>
-            <li>Purple</li>
-            <li>Brown</li>
-            <li>Gray</li>
+            {
+              this.props.colors.map((color,id) =>
+                <SideBarItem color={color} key={id}/>
+              )
+            }
           </ul>
         </div>
 

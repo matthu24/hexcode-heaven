@@ -1,21 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 json.extract! color, :id, :name
   hexes = color.hexes
   json.hexes do
