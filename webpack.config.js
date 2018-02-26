@@ -18,9 +18,9 @@ var devPlugins = []; // if using any plugins for development
 //   })
 // ];
 
-plugins = plugins.concat(
-  process.env.NODE_ENV === 'production' ? prodPlugins : devPlugins
-);
+// plugins = plugins.concat(
+//   process.env.NODE_ENV === 'production' ? prodPlugins : devPlugins
+// );
 
 
 
