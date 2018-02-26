@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, Route } from 'react-router-dom';
+
 
 export default props => {
   let color = '#' + props.hex.code;
@@ -6,8 +8,10 @@ export default props => {
   return(
     <li>
       <div className='swatch-bundle'>
-        <div style={{backgroundColor:color}} className='swatch-item'></div>
-        <div>#{props.hex.code}</div>
+        <Link to={`/hex/${props.hex.code}`}>
+          <div style={{backgroundColor:color}} className='swatch-item'></div>
+          <div>#{props.hex.code}</div>
+        </Link>
       </div>
 
     </li>
