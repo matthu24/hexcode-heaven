@@ -1,5 +1,7 @@
 import React from 'react';
 import HexItem from '../hex/hex_item';
+import { Link, Route } from 'react-router-dom';
+
 
 class ColorsShow extends React.Component{
   constructor(props){
@@ -21,7 +23,11 @@ class ColorsShow extends React.Component{
           {
             hexes.map((hex,id) => <HexItem key={id} hex={hex}/>)
           }
+          <Link className='back'  to='/'>
+            Clear
+          </Link>
         </ul>
+
       </div>
     )
   }
