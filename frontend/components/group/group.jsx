@@ -19,11 +19,24 @@ class Group extends React.Component{
 
     return(
       <div className='group1-index'>
-        <ul>
+        <ul className='group1-show'>
           {
             hexes.map((hex,id)=><HexItem key={id} hex={hex}/>)
           }
         </ul>
+        <div >
+          <ul className='paginate'>
+            <li><Link to={'/'}>1</Link></li>
+            <li>2</li>
+
+            <li>3</li>
+
+            <li>4</li>
+
+            <li>5</li>
+
+          </ul>
+        </div>
       </div>
     )
   }

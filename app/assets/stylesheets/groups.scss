@@ -6,7 +6,25 @@
   display: inline-block;
 /*position: float;*/
 margin-left: 17%;
-border: 1px solid red;
+// border: 1px solid red;
 height: 91vh;
 width: 79vw;
+}
+
+.group1-show{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -2.5%;
+}
+
+.paginate{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.paginate li{
+  margin: 30px;
 }

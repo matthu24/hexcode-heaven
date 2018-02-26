@@ -12,8 +12,11 @@ height: 91vh;
 width: 79vw;
 }
 
+
 .colors-show-list{
-  // border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-right: -2.5%;
 
 }
