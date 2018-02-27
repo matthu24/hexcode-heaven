@@ -6,6 +6,7 @@ class Search extends React.Component{
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.findMatches = this.findMatches.bind(this);
+    this.reset = this.reset.bind(this);
     this.state = {searchValue: ""};
   }
 
@@ -37,6 +38,10 @@ class Search extends React.Component{
     }).splice(0,3)
   }
 
+  reset(){
+    this.setState({searchValue:""})
+  }
+
   render(){
     if (!this.props.colors) {
       return null;
@@ -55,7 +60,7 @@ class Search extends React.Component{
       //have an onChange event for the input
     return(
       <div className='search-container'>
-        <input placeholder='Search' onChange={this.handleChange} className='search' type='text'></input>
+        <input placeholder='Search' onBlur={this.reset} onChange={this.handleChange} className='search' type='text'></input>
         <SearchDropdown results={results}/>
       </div>
     )
