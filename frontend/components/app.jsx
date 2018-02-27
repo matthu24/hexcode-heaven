@@ -17,7 +17,8 @@ import Group7Container from './group/group7_container';
 const App = () => (
   <div>
     <Route path = "/" component={Nav} />
-    // <Route path = "/" component={SideBarContainer} />
+    <Route path = "/" component={SideBarContainer} />
+
 
     <Switch>
 
