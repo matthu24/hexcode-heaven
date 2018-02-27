@@ -1,4 +1,5 @@
 import React from 'react';
+import Search from './search/search_container';
 
 class Nav extends React.Component{
   constructor(props){
@@ -16,7 +17,7 @@ class Nav extends React.Component{
           </div>
 
           <div className='nav-right'>
-            <input placeholder='Search' className='search' type='text'></input>
+            <Search/>
           </div>
         </div>
 
