@@ -10,7 +10,7 @@ class Group3 extends React.Component{
   }
 
   componentDidMount(){
-    this.props.fetchSingleGroup(31);
+    this.props.fetchSingleGroup(10);
   }
 
   render(){

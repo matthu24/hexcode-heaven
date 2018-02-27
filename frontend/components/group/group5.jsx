@@ -10,7 +10,7 @@ class Group5 extends React.Component{
   }
 
   componentDidMount(){
-    this.props.fetchSingleGroup(33);
+    this.props.fetchSingleGroup(12);
   }
 
   render(){

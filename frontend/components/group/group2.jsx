@@ -10,7 +10,7 @@ class Group2 extends React.Component{
   }
 
   componentDidMount(){
-    this.props.fetchSingleGroup(30);
+    this.props.fetchSingleGroup(9);
   }
 
   render(){
