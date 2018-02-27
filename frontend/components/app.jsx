@@ -17,11 +17,17 @@ import Group7Container from './group/group7_container';
 const App = () => (
   <div>
     <Route path = "/" component={Nav} />
-    <Route path = "/" component={SideBarContainer} />
+    // <Route path = "/" component={SideBarContainer} />
 
     <Switch>
 
-
+      <Route exact path = "/" component={GroupContainer} />
+      <Route exact path = "/groups/2" component={Group2Container} />
+      <Route exact path = "/groups/3" component={Group3Container} />
+      <Route exact path = "/groups/4" component={Group4Container} />
+      <Route exact path = "/groups/5" component={Group5Container} />
+      <Route exact path = "/groups/6" component={Group6Container} />
+      <Route exact path = "/groups/7" component={Group7Container} />
       <Route exact path = "/colors/:colorId" component={ColorsShowContainer}/>
       <Route exact path = "/hex/:code" component={HexShowContainer}/>
 
@@ -30,11 +36,3 @@ const App = () => (
 )
 
 export default App;
-
-// <Route exact path = "/" component={GroupContainer} />
-// <Route exact path = "/groups/2" component={Group2Container} />
-// <Route exact path = "/groups/3" component={Group3Container} />
-// <Route exact path = "/groups/4" component={Group4Container} />
-// <Route exact path = "/groups/5" component={Group5Container} />
-// <Route exact path = "/groups/6" component={Group6Container} />
-// <Route exact path = "/groups/7" component={Group7Container} />
