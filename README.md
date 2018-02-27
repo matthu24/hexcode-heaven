@@ -1,3 +1,2 @@
 # README
-Live: 
-hexcode-heaven.herokuapp.com/
+Live: https://hexcode-heaven.herokuapp.com/#/
