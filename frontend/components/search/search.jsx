@@ -56,7 +56,7 @@ class Search extends React.Component{
 
     return(
       <div className='search-container'>
-        <input placeholder='Search' onBlur={this.resetWait} value={this.state.searchValue} onChange={this.handleChange} className='search' type='text'></input>
+        <input placeholder='Search by hex code' onBlur={this.resetWait} value={this.state.searchValue} onChange={this.handleChange} className='search' type='text'></input>
         <SearchDropdown results={results}/>
       </div>
     )
