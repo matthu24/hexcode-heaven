@@ -19,9 +19,7 @@ const App = () => (
     <Route path = "/" component={Nav} />
     <Route path = "/" component={SideBarContainer} />
 
-
     <Switch>
-
       <Route exact path = "/" component={GroupContainer} />
       <Route exact path = "/groups/2" component={Group2Container} />
       <Route exact path = "/groups/3" component={Group3Container} />
@@ -31,7 +29,6 @@ const App = () => (
       <Route exact path = "/groups/7" component={Group7Container} />
       <Route exact path = "/colors/:colorId" component={ColorsShowContainer}/>
       <Route exact path = "/hex/:code" component={HexShowContainer}/>
-
     </Switch>
   </div>
 )

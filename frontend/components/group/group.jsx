@@ -14,10 +14,10 @@ class Group extends React.Component{
   }
 
   render(){
-    if(!this.props.groups[0]) return null;
-      console.log(this.props.groups[0].name)
 
-      let hexes = Object.values(this.props.groups[0].hexes)
+    if(!this.props.groups[0]) return null;
+
+    let hexes = Object.values(this.props.groups[0].hexes)
 
     return(
       <div className='group1-index'>
@@ -30,8 +30,8 @@ class Group extends React.Component{
           <ul className='paginate'>
             <li>
               <NavLink to='/' exact={true} activeStyle={{ textDecoration: 'underline' }}>1</NavLink>
-
             </li>
+            
             <li>
               <NavLink to='/groups/2' exact={true} activeStyle={{ textDecoration: 'underline' }}>2</NavLink>
             </li>
@@ -51,12 +51,10 @@ class Group extends React.Component{
             <li>
               <NavLink to='/groups/6' exact={true} activeStyle={{ textDecoration: 'underline' }}>6</NavLink>
             </li>
+
             <li>
               <NavLink to='/groups/7' exact={true} activeStyle={{ textDecoration: 'underline' }}>7</NavLink>
             </li>
-
-
-
           </ul>
         </div>
 

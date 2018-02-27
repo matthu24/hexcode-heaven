@@ -15,9 +15,8 @@ class Group7 extends React.Component{
 
   render(){
     if(!this.props.groups[0]) return null;
-      console.log(this.props.groups[0].name)
 
-      let hexes = Object.values(this.props.groups[0].hexes)
+    let hexes = Object.values(this.props.groups[0].hexes)
 
     return(
       <div className='group1-index'>
@@ -54,9 +53,6 @@ class Group7 extends React.Component{
             <li>
               <NavLink to='/groups/7' exact={true} activeStyle={{ textDecoration: 'underline' }}>7</NavLink>
             </li>
-
-
-
           </ul>
         </div>
       </div>

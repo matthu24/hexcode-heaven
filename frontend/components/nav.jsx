@@ -16,8 +16,8 @@ class Nav extends React.Component{
           <div className='nav-right'>
             <Search/>
           </div>
+          
         </div>
-
     )
   }
 }
