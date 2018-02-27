@@ -8,10 +8,9 @@ class Dropdown extends React.Component {
     return (
       <div className="suggestions">
         <ul>
-          <li className="search-results-li">
-            hi
-          </li>
-          <li className="search-results-li">hey</li>
+          {
+            this.props.results.map(result => <li className="search-results-li">{result}</li>)
+          }
         </ul>
       </div>
     )
@@ -19,3 +18,9 @@ class Dropdown extends React.Component {
 }
 
 export default Dropdown;
+
+
+// <li className="search-results-li">
+//   hi
+// </li>
+// <li className="search-results-li">hey</li>
