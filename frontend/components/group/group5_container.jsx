@@ -9,8 +9,7 @@ const mapStateToProps = (state) => ({
   groups: Object.values(state.entities.groups),
 });
 
-//want them to be able to just log out from navbar
-//if signed in
+
 const mapDispatchToProps = dispatch => ({
   fetchAllGroups: () => dispatch(fetchAllGroups()),
   fetchSingleGroup: (id) => dispatch(fetchSingleGroup(id))

@@ -3,14 +3,12 @@ import { connect } from 'react-redux';
 
 import Group2 from './group2';
 import {fetchAllGroups, fetchSingleGroup} from '../../actions/group';
-// import { fetchAllColors } from '../../actions/color';
 
 const mapStateToProps = (state) => ({
   groups: Object.values(state.entities.groups),
 });
 
-//want them to be able to just log out from navbar
-//if signed in
+
 const mapDispatchToProps = dispatch => ({
   fetchAllGroups: () => dispatch(fetchAllGroups()),
   fetchSingleGroup: (id) => dispatch(fetchSingleGroup(id))
