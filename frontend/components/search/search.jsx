@@ -11,15 +11,10 @@ class Search extends React.Component{
     this.state = {searchValue: ""};
   }
 
-  componentDidMount(){
-    // this.props.fetchAllColors();
-  }
-
   handleChange(e){
     e.preventDefault();
     //set state here with e.target.value
     this.setState({searchValue: e.target.value})
-
   }
 
   //findMatches will return an array of 3 hex codes that match this.state.searchValue
@@ -53,18 +48,12 @@ class Search extends React.Component{
     if (!this.props.colors) {
       return null;
     }
-    //this.props.colors is an array of color objects
 
-      let results = this.findMatches();
-      if(this.state.searchValue === ""){
-        results = []
-      }
-      console.log(results);
+    let results = this.findMatches();
+    if(this.state.searchValue === ""){
+      results = []
+    }
 
-
-      //everytime search input is changed, a state change occurs and a re render happens
-      //pass search results to SearchDropdown component as props
-      //have an onChange event for the input
     return(
       <div className='search-container'>
         <input placeholder='Search' onBlur={this.resetWait} value={this.state.searchValue} onChange={this.handleChange} className='search' type='text'></input>
@@ -75,7 +64,3 @@ class Search extends React.Component{
 }
 
 export default Search;
-
-// {
-//   this.props.colors.map(color => <li className='search-item'>{color.name}</li>)
-// }

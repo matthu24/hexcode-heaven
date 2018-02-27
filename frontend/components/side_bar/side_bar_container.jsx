@@ -8,8 +8,7 @@ const mapStateToProps = state => ({
   colors: Object.values(state.entities.colors)
 });
 
-//want them to be able to just log out from navbar
-//if signed in
+
 const mapDispatchToProps = dispatch => ({
   fetchColors: () => dispatch(fetchAllColors())
 });

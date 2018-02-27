@@ -13,7 +13,6 @@ class SideBar extends React.Component{
     this.props.fetchColors();
   }
   render(){
-    // var randomColor = Math.floor(Math.random()*16777215).toString(16);
     let codes =[];
     this.props.colors.forEach(color => {
       Object.values(color.hexes).forEach(hex => {
