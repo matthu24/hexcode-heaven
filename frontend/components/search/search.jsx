@@ -7,6 +7,7 @@ class Search extends React.Component{
     this.handleChange = this.handleChange.bind(this);
     this.findMatches = this.findMatches.bind(this);
     this.reset = this.reset.bind(this);
+    this.resetWait = this.resetWait.bind(this);
     this.state = {searchValue: ""};
   }
 
@@ -35,11 +36,17 @@ class Search extends React.Component{
       const regex = new RegExp(query, 'gi');
       //g is global (looks through entire string), i is case insensitive
       return hex.match(regex)
-    }).splice(0,3)
+    }).splice(0,4)
   }
 
   reset(){
     this.setState({searchValue:""})
+  }
+
+  resetWait(){
+    setTimeout(() => {
+      this.reset()
+    },200)
   }
 
   render(){
@@ -60,7 +67,7 @@ class Search extends React.Component{
       //have an onChange event for the input
     return(
       <div className='search-container'>
-        <input placeholder='Search' onBlur={this.reset} onChange={this.handleChange} className='search' type='text'></input>
+        <input placeholder='Search' onBlur={this.resetWait} value={this.state.searchValue} onChange={this.handleChange} className='search' type='text'></input>
         <SearchDropdown results={results}/>
       </div>
     )

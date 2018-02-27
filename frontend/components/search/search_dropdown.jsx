@@ -10,7 +10,14 @@ class Dropdown extends React.Component {
       <div className="suggestions">
         <ul>
           {
-            this.props.results.map(result => <li className="search-results-li">{result}<div className='search-color-show' style={{backgroundColor:`#${result}`}}></div></li>)
+            this.props.results.map(result =>
+              <Link className='search-link' to={`/hex/${result}`}>
+                <li className="search-results-li">
+                  {result}
+                  <div className='search-color-show' style={{backgroundColor:`#${result}`}}></div>
+                </li>
+              </Link>
+            )
           }
         </ul>
       </div>

@@ -61,11 +61,33 @@
   align-items: center;*/
   margin: 0;
   border:1px solid lightgray;
-  width: 154%;
-  /*padding-right: -5px;*/
-  padding-left: 5px;
+  width: 140%;
+  padding-right: -5px;
+  padding-left: 30.7px;
   /*padding-left: 30px;
   /*padding-right: 30px;*/
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: -39px;
+
+  background-color: white;
+
+
+}
+
+.search-results-li:hover{
+  background-color: lightgray;
+}
+
+
+/*.search-results-li{
+
+  margin: 0;
+  border:1px solid lightgray;
+  width: 154%;
+
+  padding-left: 5px;
+
   padding-bottom: 10px;
   padding-top: 10px;
   margin-left: -6.5px;
@@ -73,7 +95,7 @@
   background-color: white;
 
 
-}
+}*/
 
 .search-color-show{
   height: 5px;
